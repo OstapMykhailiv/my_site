@@ -231,6 +231,7 @@ header .content-wrap .logo {
 	.menu-list {
 		background: transparent;
 		display: flex;
+		height: 10vh;
 		align-content: end;
 		padding-top: 3.5vh;
 		font-weight: 700;
