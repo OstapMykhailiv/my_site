@@ -1,0 +1,291 @@
+/* libre-franklin-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/libre-franklin-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/libre-franklin-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-500 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/libre-franklin-v14-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* libre-franklin-600 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Libre Franklin';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/libre-franklin-v14-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	display: block;
+	width: 100%;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+.header-block {
+	height: 100vh;
+	position: relative;
+	background: url('../images/main-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-block header {
+	position: relative;
+	z-index: 10;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(114, 69, 48, 0.3);
+}
+
+header .content-wrap .logo {
+	order: 2;
+}
+
+.icons {
+	position: relative;
+	padding: 4vh 0 0 5vw;
+	color: #fff;
+	font-size: 2.3rem;
+	z-index: 999;
+}
+
+.logo {
+	position: relative;
+	z-index: 3;
+	padding: 3vh 5vw 0 0;
+	width: 100%;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+	font-family: "Libre Franklin", serif;
+	font-weight: 700;
+	color: white;
+}
+.logo-text{
+	padding: 15vh 5vw 0;
+	text-align: center;
+	font-size: 2rem;
+	font-family: "Libre Franklin", serif;
+	font-weight: 400;
+	color: white;
+	text-shadow: 2px 2px 2px gray;
+}
+.logo-text a {
+	color: white;
+	text-decoration: underline white;
+	transition: color 0.3s;
+}
+
+.logo-text a:active {
+	color: gray;
+}
+.menu-list {
+	padding: 15vh 0 0 9vw;
+	position: absolute;
+	background: transparent;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	backdrop-filter: blur(20px);
+	width: 100%;
+	z-index: 2;
+}
+
+
+.menu-list li:not(:last-child) {
+	margin-bottom: 5vh;
+}
+
+.menu-list a {
+	font-size: 2rem;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 2px 2px 2px gray;
+}
+
+.main-block {
+	height: 100vh;
+	position: relative;
+	background: #FFFAF2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.main-logo{
+	padding: 3vh;
+	font-family: "Libre Franklin", serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+/*Global styles*/
+.content-wrap {
+	padding: 0 20px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-menu {
+	position: absolute;
+	left: -9999px;
+}
+
+.labs{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.select-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	font-family: Arial, sans-serif;
+}
+
+.select-style {
+	margin: 5vh 5vw;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	color: #333;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 12px;
+	width: 30%;
+	outline: none;
+}
+
+.select-style:after {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	font-size: 16px;
+}
+
+.select-style option {
+	padding: 5px 10px;
+}
+
+@media screen and (min-width: 800px) {
+	.hide-menu{
+		position: absolute;
+		left: -9999px;
+	}
+	header .content-wrap .logo {
+		order: 0;
+	}
+	.logo {
+		position: relative;
+		padding: 3vh 0 0;
+		width: 100%;
+		display: flex;
+		justify-content: left;
+	}
+	.icons {
+		display: none;
+	}
+	.hide-menu {
+		position: static;
+	}
+
+	.menu-list {
+		background: transparent;
+		display: flex;
+		align-content: end;
+		padding-top: 3.5vh;
+		font-weight: 700;
+		backdrop-filter: blur(0px);
+		box-shadow: none;
+	}
+	.menu-list li:not(:last-child){
+		margin-right: 3vw;
+	}
+	.logo-text{
+		padding: 10vh 0 0 1.7vw;
+		max-width: 1100px;
+		margin: 0 auto;
+		text-align: left;
+		font-size: 1.5rem;
+		font-family: "Libre Franklin", serif;
+		font-weight: 400;
+		color: white;
+		text-shadow: 2px 2px 2px gray;
+	}
+
+	.labs{
+		max-width: 1100px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+	.select-wrapper {
+		position: relative;
+		display: inline-block;
+		width: 200px; /* Змініть ширину за потребою */
+		font-family: Arial, sans-serif;
+	}
+
+	.select-style {
+		margin: 5vh 5vw;
+		border: 1px solid #ccc;
+		background-color: #fff;
+		color: #333;
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 16px;
+		width: 30%;
+		outline: none;
+	}
+
+	.select-style:after {
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		font-size: 16px;
+	}
+
+	.select-style option {
+		padding: 5px 10px;
+	}
+}
