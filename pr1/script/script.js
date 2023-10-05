@@ -20,9 +20,7 @@ window.addEventListener('resize',() =>{
 
 let lr1 = document.getElementById("lr1")
 lr1.addEventListener("change", () =>{
-	if (lr1.value == 0){
-
-	}
+	if (lr1.value == 0){}
 	else{
 		window.open(`https://ostapmykhailiv.github.io/lr1/${lr1.value}/`, "_blank")
 	}
