@@ -239,6 +239,11 @@ header .content-wrap .home-logo {
 	color: #333;
 	font-family: "Libre Franklin", serif;
 }
+
+.footer{
+	text-decoration: none;
+	color: #333;
+}
 /*Global styles*/
 .content-wrap {
 	padding: 0 20px;
@@ -264,6 +269,11 @@ header .content-wrap .home-logo {
 	display: flex;
 	justify-content: center;
 }
+
+.labs-bg{
+	padding-bottom: 10vh;
+}
+
 .select-wrapper {
 	position: relative;
 	display: inline-block;
