@@ -27,7 +27,7 @@ lr1.addEventListener("change", () =>{
 })
 let lr2 = document.getElementById("lr2")
 lr2.addEventListener("change", () =>{
-	if (lr1.value == 0){}
+	if (lr2.value == 0){}
 	else{
 		window.open(`https://ostapmykhailiv.github.io/lr2/`, "_blank")
 	}
