@@ -25,3 +25,10 @@ lr1.addEventListener("change", () =>{
 		window.open(`https://ostapmykhailiv.github.io/lr1/${lr1.value}/`, "_blank")
 	}
 })
+let lr2 = document.getElementById("lr2")
+lr1.addEventListener("change", () =>{
+	if (lr1.value == 0){}
+	else{
+		window.open(`https://ostapmykhailiv.github.io/lr2/`, "_blank")
+	}
+})
