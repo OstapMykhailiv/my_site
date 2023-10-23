@@ -32,3 +32,10 @@ lr2.addEventListener("change", () =>{
 		window.open(`https://ostapmykhailiv.github.io/lr2/index.html`, "_blank")
 	}
 })
+let pr2 = document.getElementById("pr2")
+pr2.addEventListener("change", () =>{
+	if (pr2.value == 0){}
+	else{
+		window.open(`https://ostapmykhailiv.github.io/pr2/${pr2.value}/index.html`, "_blank")
+	}
+})
