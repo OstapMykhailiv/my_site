@@ -33,7 +33,7 @@ lr2.addEventListener("change", () =>{
 	}
 })
 let lr3 = document.getElementById("lr3")
-lr2.addEventListener("change", () =>{
+lr3.addEventListener("change", () =>{
 	if (lr3.value == 0){}
 	else{
 		window.open(`https://ostapmykhailiv.github.io/lr3/index.html`, "_blank")
