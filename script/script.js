@@ -53,3 +53,10 @@ pr3.addEventListener("change", () =>{
 		window.open(`https://ostapmykhailiv.github.io/pr3/index.html`, "_blank")
 	}
 })
+let pr4 = document.getElementById("pr4")
+pr4.addEventListener("change", () =>{
+	if (pr4.value == 0){}
+	else{
+		window.open(`https://ostapmykhailiv.github.io/pr4/index.html`, "_blank")
+	}
+})
