@@ -60,3 +60,10 @@ pr4.addEventListener("change", () =>{
 		window.open(`https://ostapmykhailiv.github.io/pr4/${pr4.value}/index.html`, "_blank")
 	}
 })
+let pr5 = document.getElementById("pr5")
+pr5.addEventListener("change", () =>{
+	if (pr5.value == 0){}
+	else{
+		window.open(`https://ostapmykhailiv.github.io/pr5/index.html`, "_blank")
+	}
+})
